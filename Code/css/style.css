@@ -42,16 +42,19 @@ body{
     height: 40px;
 }
 
+
 .head-box{
     position: absolute;
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 .main-heading{
     color: rgb(255, 255, 255);
     text-transform: uppercase;
+    margin-bottom: 60px;
 }
 
 .main-heading-first{
@@ -70,7 +73,6 @@ body{
     animation-name: moveRight;
     animation-duration: 1s;
     animation-timing-function: ease-out;
-    
 }
 
 
@@ -92,7 +94,7 @@ body{
 @keyframes moveRight{
     0%{
         opacity: 0;
-        transform: translateX(150px);
+        transform: translateX(100px);
     }
     80%{
         transform: translateX(-20px);
@@ -101,4 +103,28 @@ body{
         opacity: 1;
         transform: translate(0);
     }
+}
+
+.btn:link,
+.btn:visited{
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    border-radius: 100px;
+    display: inline-block;
+}
+
+.btn:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 20px 20px rgb(19, 18, 18, .2);
+}
+.btn:active{
+    transform: translate(-3px);
+    box-shadow: 0 5px 10px rgba(10, 18, 18, .2);
+
+}
+
+.btn-white{
+    background-color: #fff;
+    color: #777;
 }
