@@ -41,17 +41,17 @@ body{
     backface-visibility: hidden;
 }
 
-.logo-box{
+.header__logo-box{
     position: absolute;
     top:4rem;
     left: 4rem;
 }
-.logo{
+.header__logo{
     height: 4rem;
 }
 
 
-.head-box{
+.header__head-box{
     position: absolute;
     top: 40%;
     left: 50%;
@@ -65,7 +65,7 @@ body{
     margin-bottom: 6rem;
 }
 
-.main-heading-first{
+.main-heading--first{
     display: block;
     font-size: 6rem;
     font-weight: 700;
@@ -73,7 +73,7 @@ body{
     animation-name: movieInLeft;
     animation-duration: 1s;
 }
-.main-heading-second{
+.main-heading--second{
     display: block;
     font-size: 2rem;
     font-weight: 700;
@@ -145,7 +145,7 @@ body{
 
 }
 
-.btn-white{
+.btn--white{
     background-color: #fff;
     color: #777;
 }
@@ -163,15 +163,15 @@ body{
     transition: all .4s;
 }
 
-.btn-white::after{
+.btn--white::after{
     background-color: #fff;
 }
-.btn-white:hover::after{
+.btn--white:hover::after{
     transform: scaleX(1.5) scaleY(1.8);
     opacity: 0;
 }
 
-.btn-animate{
+.btn--animate{
     animation: bottom;
     animation-duration: .4s;
     animation-delay: .75s;
