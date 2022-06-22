@@ -1,2 +1,2 @@
 # Outdoor
-Mastering the css .
+Mastering the css and Sass .
