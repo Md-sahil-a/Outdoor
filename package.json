@@ -1,0 +1,22 @@
+{
+  "name": "outdoor",
+  "version": "1.0.0",
+  "description": "lets explore the world",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Md-sahil-a/Outdoor.git"
+  },
+  "author": "sahil",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Md-sahil-a/Outdoor/issues"
+  },
+  "homepage": "https://github.com/Md-sahil-a/Outdoor#readme",
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
