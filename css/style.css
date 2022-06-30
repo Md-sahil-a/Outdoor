@@ -1,11 +1,3 @@
-/*
-COLORS:
-
-Light green: #7ed56f
-Medium green: #55c57a
-Dark green: #28b485
-
-*/
 *,
 *::after,
 *:visited {
@@ -17,54 +9,7 @@ html {
   font-size: 66.5%; }
 
 body {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  font-size: 1.6rem;
-  line-height: 1.7;
-  color: #777;
-  padding: 3rem;
   box-sizing: border-box; }
-
-.header {
-  height: 95vh;
-  background-image: linear-gradient(to right bottom, #7ed56fa8, #28b485b8), url("../Code/img/hero.jpg");
-  background-size: cover;
-  background-position: top;
-  position: relative;
-  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-  backface-visibility: hidden; }
-  .header__logo_box {
-    position: absolute;
-    top: 4rem;
-    left: 4rem; }
-  .header__logo {
-    height: 4rem; }
-  .header__head-box {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center; }
-
-.main-heading {
-  color: white;
-  text-transform: uppercase;
-  margin-bottom: 6rem; }
-  .main-heading--first {
-    display: block;
-    font-size: 6rem;
-    font-weight: 700;
-    letter-spacing: 3.5rem;
-    animation-name: movieInLeft;
-    animation-duration: 1s; }
-  .main-heading--second {
-    display: block;
-    font-size: 2rem;
-    font-weight: 700;
-    letter-spacing: 1.75rem;
-    animation-name: moveRight;
-    animation-duration: 1s;
-    animation-timing-function: ease-out; }
 
 @keyframes movieInLeft {
   0% {
@@ -93,6 +38,34 @@ body {
   100% {
     opacity: 1;
     transform: translate(0); } }
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.7;
+  color: #777;
+  padding: 3rem; }
+
+.main-heading {
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 6rem; }
+  .main-heading--first {
+    display: block;
+    font-size: 6rem;
+    font-weight: 700;
+    letter-spacing: 3.5rem;
+    animation-name: movieInLeft;
+    animation-duration: 1s; }
+  .main-heading--second {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1.75rem;
+    animation-name: moveRight;
+    animation-duration: 1s;
+    animation-timing-function: ease-out; }
 
 .btn:link, .btn:visited {
   text-transform: uppercase;
@@ -138,3 +111,24 @@ body {
   animation-duration: 0.4s;
   animation-delay: 0.75s;
   animation-fill-mode: backwards; }
+
+.header {
+  height: 95vh;
+  background-image: linear-gradient(to right bottom, #7ed56fa8, #28b485b8), url("../Code/img/hero.jpg");
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  backface-visibility: hidden; }
+  .header__logo_box {
+    position: absolute;
+    top: 4rem;
+    left: 4rem; }
+  .header__logo {
+    height: 4rem; }
+  .header__head-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }

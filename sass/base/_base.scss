@@ -1,0 +1,15 @@
+*,
+*::after,
+*:visited {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 66.5%;
+}
+
+body {
+  box-sizing: border-box;
+}
