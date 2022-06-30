@@ -7,8 +7,8 @@ Dark green: #28b485
 
 */
 *,
-*::after
-, *:visited {
+*::after,
+*:visited {
   margin: 0;
   padding: 0;
   box-sizing: inherit; }
@@ -27,49 +27,44 @@ body {
 
 .header {
   height: 95vh;
-  background-image: linear-gradient(to right bottom, #7ed56fa8, #28b485b8), url("../img/hero.jpg");
+  background-image: linear-gradient(to right bottom, #7ed56fa8, #28b485b8), url("../Code/img/hero.jpg");
   background-size: cover;
   background-position: top;
   position: relative;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   backface-visibility: hidden; }
-
-.header__logo-box {
-  position: absolute;
-  top: 4rem;
-  left: 4rem; }
-
-.header__logo {
-  height: 4rem; }
-
-.header__head-box {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center; }
+  .header__logo_box {
+    position: absolute;
+    top: 4rem;
+    left: 4rem; }
+  .header__logo {
+    height: 4rem; }
+  .header__head-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
 
 .main-heading {
   color: white;
   text-transform: uppercase;
   margin-bottom: 6rem; }
-
-.main-heading--first {
-  display: block;
-  font-size: 6rem;
-  font-weight: 700;
-  letter-spacing: 3.5rem;
-  animation-name: movieInLeft;
-  animation-duration: 1s; }
-
-.main-heading--second {
-  display: block;
-  font-size: 2rem;
-  font-weight: 700;
-  letter-spacing: 1.75rem;
-  animation-name: moveRight;
-  animation-duration: 1s;
-  animation-timing-function: ease-out; }
+  .main-heading--first {
+    display: block;
+    font-size: 6rem;
+    font-weight: 700;
+    letter-spacing: 3.5rem;
+    animation-name: movieInLeft;
+    animation-duration: 1s; }
+  .main-heading--second {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1.75rem;
+    animation-name: moveRight;
+    animation-duration: 1s;
+    animation-timing-function: ease-out; }
 
 @keyframes movieInLeft {
   0% {
@@ -99,8 +94,7 @@ body {
     opacity: 1;
     transform: translate(0); } }
 
-.btn:link,
-.btn:visited {
+.btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
   padding: 1.5rem 4rem;
@@ -120,6 +114,9 @@ body {
 .btn--white {
   background-color: #fff;
   color: #777; }
+  .btn--white:hover::after {
+    transform: scaleX(1.5) scaleY(1.8);
+    opacity: 0; }
 
 .btn::after {
   content: "";
@@ -131,17 +128,13 @@ body {
   top: 0;
   left: 0;
   z-index: -1;
-  transition: all .4s; }
+  transition: all 0.4s; }
 
 .btn--white::after {
   background-color: #fff; }
 
-.btn--white:hover::after {
-  transform: scaleX(1.5) scaleY(1.8);
-  opacity: 0; }
-
 .btn--animate {
   animation: bottom;
-  animation-duration: .4s;
-  animation-delay: .75s;
+  animation-duration: 0.4s;
+  animation-delay: 0.75s;
   animation-fill-mode: backwards; }
