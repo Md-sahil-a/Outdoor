@@ -3,41 +3,55 @@
 *:visited {
   margin: 0;
   padding: 0;
-  box-sizing: inherit; }
+  box-sizing: inherit;
+}
 
 html {
-  font-size: 66.5%; }
+  font-size: 66.5%;
+}
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 @keyframes movieInLeft {
   0% {
     opacity: 0;
-    transform: translateX(-10rem); }
+    transform: translateX(-10rem);
+  }
   80% {
-    transform: translateX(2rem); }
+    transform: translateX(2rem);
+  }
   100% {
     opacity: 1;
-    transform: translate(0); } }
+    transform: translate(0);
+  }
+}
 
 @keyframes moveRight {
   0% {
     opacity: 0;
-    transform: translateX(10rem); }
+    transform: translateX(10rem);
+  }
   80% {
-    transform: translateX(-2rem); }
+    transform: translateX(-2rem);
+  }
   100% {
     opacity: 1;
-    transform: translate(0); } }
+    transform: translate(0);
+  }
+}
 
 @keyframes bottom {
   0% {
     opacity: 0;
-    transform: translateY(3rem); }
+    transform: translateY(3rem);
+  }
   100% {
     opacity: 1;
-    transform: translate(0); } }
+    transform: translate(0);
+  }
+}
 
 body {
   font-family: "Lato", sans-serif;
@@ -45,51 +59,61 @@ body {
   font-size: 1.6rem;
   line-height: 1.7;
   color: #777;
-  padding: 3rem; }
+  padding: 3rem;
+}
 
 .main-heading {
   color: white;
   text-transform: uppercase;
-  margin-bottom: 6rem; }
-  .main-heading--first {
-    display: block;
-    font-size: 6rem;
-    font-weight: 700;
-    letter-spacing: 3.5rem;
-    animation-name: movieInLeft;
-    animation-duration: 1s; }
-  .main-heading--second {
-    display: block;
-    font-size: 2rem;
-    font-weight: 700;
-    letter-spacing: 1.75rem;
-    animation-name: moveRight;
-    animation-duration: 1s;
-    animation-timing-function: ease-out; }
+  margin-bottom: 6rem;
+}
+.main-heading--first {
+  display: block;
+  font-size: 6rem;
+  font-weight: 700;
+  letter-spacing: 3.5rem;
+  animation-name: movieInLeft;
+  animation-duration: 1s;
+}
+.main-heading--second {
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 1.75rem;
+  animation-name: moveRight;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
 
-.btn:link, .btn:visited {
+.btn:link,
+.btn:visited {
   text-transform: uppercase;
   text-decoration: none;
   padding: 1.5rem 4rem;
   border-radius: 10rem;
   display: inline-block;
   position: relative;
-  font-size: 1.6rem; }
+  font-size: 1.6rem;
+}
 
 .btn:hover {
   transform: translateY(-0.6rem);
-  box-shadow: 0 2rem 2rem rgba(19, 18, 18, 0.2); }
+  box-shadow: 0 2rem 2rem rgba(19, 18, 18, 0.2);
+}
 
 .btn:active {
   transform: translate(-0.3rem);
-  box-shadow: 0 0.5rem 1rem rgba(10, 18, 18, 0.2); }
+  box-shadow: 0 0.5rem 1rem rgba(10, 18, 18, 0.2);
+}
 
 .btn--white {
   background-color: #fff;
-  color: #777; }
-  .btn--white:hover::after {
-    transform: scaleX(1.5) scaleY(1.8);
-    opacity: 0; }
+  color: #777;
+}
+.btn--white:hover::after {
+  transform: scaleX(1.5) scaleY(1.8);
+  opacity: 0;
+}
 
 .btn::after {
   content: "";
@@ -101,34 +125,42 @@ body {
   top: 0;
   left: 0;
   z-index: -1;
-  transition: all 0.4s; }
+  transition: all 0.4s;
+}
 
 .btn--white::after {
-  background-color: #fff; }
+  background-color: #fff;
+}
 
 .btn--animate {
   animation: bottom;
   animation-duration: 0.4s;
   animation-delay: 0.75s;
-  animation-fill-mode: backwards; }
+  animation-fill-mode: backwards;
+}
 
 .header {
   height: 95vh;
-  background-image: linear-gradient(to right bottom, #7ed56fa8, #28b485b8), url("../Code/img/hero.jpg");
+  background-image: linear-gradient(to right bottom, #7ed56fa8, #28b485b8),
+    url("../Code/img/hero.jpg");
   background-size: cover;
   background-position: top;
   position: relative;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-  backface-visibility: hidden; }
-  .header__logo_box {
-    position: absolute;
-    top: 4rem;
-    left: 4rem; }
-  .header__logo {
-    height: 4rem; }
-  .header__head-box {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center; }
+  backface-visibility: hidden;
+}
+.header__logo_box {
+  position: absolute;
+  top: 4rem;
+  left: 4rem;
+}
+.header__logo {
+  height: 4rem;
+}
+.header__head-box {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
