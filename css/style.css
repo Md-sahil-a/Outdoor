@@ -153,4 +153,21 @@ body {
 .section-about {
   background-color: #f7f7f7;
   padding: 25rem 0;
-  margin-top: -20vh; }
+  margin-top: -27vh; }
+
+.row {
+  max-width: 144rem;
+  background-color: red;
+  margin: 0 auto;
+  content: "";
+  display: table;
+  clear: both; }
+  .row:not(:last-child) {
+    margin-bottom: 8rem; }
+  .row [class^="col-"] {
+    background-color: orangered;
+    float: left; }
+    .row [class^="col-"]:not(:last-child) {
+      margin: 6rem; }
+  .row .col-1-of-2 {
+    width: calc((100% - $gutter-horzontal) /2); }
