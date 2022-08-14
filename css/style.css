@@ -94,6 +94,15 @@ body {
 .u-center-text {
   text-align: center; }
 
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem; }
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem; }
+
+.u-margin-bottom-big {
+  margin-bottom: 8rem; }
+
 .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -138,6 +147,25 @@ body {
   animation-duration: 0.4s;
   animation-delay: 0.75s;
   animation-fill-mode: backwards; }
+
+.btn-text:link, .btn-text:visited {
+  color: #28b485b8;
+  font-size: 1.6rem;
+  display: inline-block;
+  padding: 3px;
+  text-decoration: none;
+  border-bottom: 1px solid #28b485b8;
+  transition: all .2s; }
+
+.btn-text:hover {
+  background-color: #28b485b8;
+  color: white;
+  box-shadow: 0 1rem 2rem rgba(40, 180, 133, 0.15);
+  transform: translateY(-2px); }
+
+.btn-text:active {
+  box-shadow: 0 0.5rem 2rem rgba(40, 180, 133, 0.15);
+  transform: translateY(0); }
 
 .header {
   height: 95vh;
