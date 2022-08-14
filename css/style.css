@@ -166,7 +166,7 @@ body {
   margin-top: -27vh; }
 
 .row {
-  max-width: 144rem;
+  max-width: 114rem;
   margin: 0 auto;
   content: "";
   display: table;
@@ -176,6 +176,6 @@ body {
   .row [class^="col-"] {
     float: left; }
     .row [class^="col-"]:not(:last-child) {
-      margin: 6rem; }
+      margin-right: 6rem; }
   .row .col-1-of-2 {
-    width: calc((100% - $gutter-horzontal) /2); }
+    width: calc((100% - 6rem) /2); }

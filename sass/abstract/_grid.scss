@@ -1,23 +1,20 @@
 .row{
-    max-width: 144rem;
-    // background-color: red;
+    max-width: $grid-width;
     margin: 0 auto;
     &:not(:last-child){
         margin-bottom: $gutter-vertical;
     }
     @include clearfix;
     [class ^="col-"]{
-        // background-color: orangered;
         float: left;
         &:not(:last-child){
-            margin: $gutter-horizontal;
+            margin-right: $gutter-horizontal;
         }
         
 
     }
     .col-1-of-2{
-        width: calc((100% - $gutter-horzontal) /2);
-       
+        width: calc((100% - #{$gutter-horizontal}) /2);
     }
     
 }
