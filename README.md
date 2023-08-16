@@ -1,2 +1,2 @@
 # Outdoor
-Mastering the css and Sass .
+💅 CSS & Sass Practice Repo: Delve into the world of web styling with our dedicated repository for CSS and Sass practice. Here, you'll find a collection of hands-on exercises and projects designed to hone your frontend design skills. From mastering responsive layouts to unleashing the power of Sass variables and mixins, this repository is your playground for creating stunning and efficient web interfaces. Elevate your design prowess and create captivating user experiences. 🎨💻🌟
